@@ -1,0 +1,66 @@
+.cryptogram {
+  @blackZeroAlpha: rgba(0, 0, 0, 0);
+  @main: #777;
+  @darkMain: darken(@main, 20%);
+  @lightMain: lighten(@main, 20%);
+
+  width: 800px;
+  margin: auto;
+
+  .puzzle {
+    .word {
+      font-family: "Courier New", monospace;
+      font-size: 25px;
+      margin-right: 1em;
+      color: @darkMain;
+      display: inline-block;
+      margin-bottom: 0.1em;
+      .tile {
+        margin-right: 0.01em;
+        cursor: pointer;
+        color: @darkMain;
+        display: inline-block;
+        width: 1em;
+        border-bottom: 2px solid @blackZeroAlpha;
+        text-align: center;
+        &:hover:not(.punctuation) {
+          border-color: @darkMain;
+        }
+        &.highlight {
+          border-color: @lightMain;
+        }
+        &.punctuation {
+          cursor: auto;
+        }
+        &.decrypted, &.punctuation {
+          font-weight: bold;
+        }
+        &.decrypt-highlight {
+          border-color: @lightMain;
+        }
+      }
+    }
+  }
+
+  .letterBoard {
+    .letter {
+      font-family: "Courier New", monospace;
+      font-size: 25px;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      border: 1px solid @darkMain;
+      text-align: center;
+      vertical-align: middle;
+      background: @lightMain;
+      color: black;
+      &.highlight {
+        border: 1px solid @lightMain;
+      }
+      &.used {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}

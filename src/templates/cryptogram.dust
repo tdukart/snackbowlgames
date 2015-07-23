@@ -1,0 +1,8 @@
+<div class="cryptogram">
+  <div class="puzzle">{puzzle}</div>
+  <div class="letterBoard">
+    {#alphabet}
+      <span class="letter" data-letter="{.}">{.}</span>
+    {/alphabet}
+  </div>
+</div>

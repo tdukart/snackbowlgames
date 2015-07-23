@@ -1,0 +1,17 @@
+#Generated/Downloaded Files
+dist
+src/styles/**/*.css
+src/styles/**/*.css.map
+src/js
+src/ts/generated
+
+#Libraries
+node_modules
+src/ts/lib
+src/ts/typings
+
+#Caches
+.tscache
+
+#IDE
+.idea

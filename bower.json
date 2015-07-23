@@ -1,0 +1,27 @@
+{
+  "name": "snackbowl",
+  "version": "0.1.0",
+  "authors": [
+    "Todd Dukart <tdukart@aloftinteractive.com>"
+  ],
+  "description": "JavaScript-based engine for puzzle and mini casual games",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/ts/lib/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dustjs-linkedin": "~2.7.2",
+    "hogan": "~3.0.2",
+    "jquery": "~2.1.4",
+    "kineticjs": "~5.1.0",
+    "requirejs": "~2.1.19",
+    "requirejs-plugins": "~1.0.3"
+  }
+}

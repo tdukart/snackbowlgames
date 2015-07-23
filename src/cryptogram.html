@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Cryptogram | Candy Bowl Games</title>
+  <script src="js/lib/bower/requirejs/require.js"></script>
+  <script src="js/config.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: '../src/js'
+    });
+    require(['cryptogram/Cryptogram'], function(Cryptogram) {
+      var puzzle = new Cryptogram(document.getElementById('puzzle'), 'The reports of my death have been greatly exaggerated. -Mark Twain');
+      document.getElementById('hint').onclick = function() {
+        puzzle.giveHint();
+      };
+      document.getElementById('clearErrors').onclick = function() {
+        puzzle.showErrors();
+      };
+      document.getElementById('reset').onclick = function() {
+        puzzle.reset();
+      };
+    });
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/cryptogram.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="puzzle"></div>
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-default" id="hint">Hint!</button>
+      <button class="btn btn-default" id="clearErrors">Clear Errors!</button>
+      <button class="btn btn-danger" id="reset">Reset</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
