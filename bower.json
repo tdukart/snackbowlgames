@@ -19,9 +19,9 @@
   "dependencies": {
     "dustjs-linkedin": "~2.7.2",
     "hogan": "~3.0.2",
-    "jquery": "~2.1.4",
+    "jquery": "~3.1.0",
     "kineticjs": "~5.1.0",
-    "requirejs": "~2.1.19",
+    "requirejs": "~2.2.0",
     "requirejs-plugins": "~1.0.3"
   }
 }

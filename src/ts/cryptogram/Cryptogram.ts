@@ -1,4 +1,4 @@
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 /// <reference path="../IPuzzle.ts" />
 
 import noveltheory = require('util/EventSource');
@@ -17,7 +17,7 @@ function _processSeed(seedString:string):number {
 
 function _resetTile($tile:JQuery) {
   $tile.removeClass('decrypted');
-  var crypt = $tile.data('crypt');
+  var crypt:string = $tile.data('crypt');
   if (crypt) {
     $tile.text(crypt);
   }
