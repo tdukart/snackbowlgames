@@ -26,6 +26,13 @@ module.exports = function(grunt) {
             cwd: 'src/js',
             expand: true,
             filter: 'isFile'
+          },
+          {
+            dest: 'dist/styles',
+            src: ['**/*.css'],
+            cwd: 'src/styles',
+            expand: true,
+            filter: 'isFile'
           }
         ]
       },
@@ -94,7 +101,7 @@ module.exports = function(grunt) {
           banner: '/* Automatically generated. DO NOT EDIT. */'
         },
         files: {
-          'src/styles/main.css': ['src/styles/main.less']
+          'src/styles/cryptogram.css': ['src/styles/cryptogram.less']
         }
       }
     },
