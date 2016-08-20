@@ -1,4 +1,5 @@
 # Snackbowl Games
+[![Dependency Status](https://www.versioneye.com/user/projects/57b89d421dcdc90047ac2929/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57b89d421dcdc90047ac2929)
 
 Welcome to Snackbowl, a TypeScript-based engine for various small puzzle games. It could be used as a unit to power a
 small game site, or you could use specific pieces for specific uses. (In fact, the main reason I'm developing this is to
