@@ -4,6 +4,7 @@ src/styles/**/*.css
 src/styles/**/*.css.map
 src/js
 src/ts/generated
+src/ts/.baseDir.ts
 
 #Libraries
 node_modules

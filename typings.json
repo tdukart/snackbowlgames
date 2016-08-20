@@ -1,0 +1,10 @@
+{
+  "name": "snackbowlgames",
+  "resolution": "src/ts/typings",
+  "globalDependencies": {
+    "jquery": "github:tdukart/DefinitelyTyped/jquery/jquery.d.ts#2fe8a6fda29c3340a5e5672b1809a84c88729a30",
+    "kineticjs": "github:tdukart/DefinitelyTyped/kineticjs/kineticjs.d.ts#f129ac0ed3f37d1684d3c3fe162a17e346e6e55f",
+    "es6-promise": "github:tdukart/DefinitelyTyped/es6-promise/es6-promise.d.ts#f129ac0ed3f37d1684d3c3fe162a17e346e6e55f",
+    "dustjs-linkedin": "github:tdukart/DefinitelyTyped/dustjs-linkedin/dustjs-linkedin.d.ts#f129ac0ed3f37d1684d3c3fe162a17e346e6e55f"
+  }
+}

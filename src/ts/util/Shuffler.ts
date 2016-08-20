@@ -1,4 +1,4 @@
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 
 class Shuffler {
   public static shuffleArray(array:Array<any>, seed?:number):Array<any> {
